@@ -1,0 +1,17 @@
+# down the main program
+<ScatterTextWidget>: 
+	orientation: 'vertical'
+	TextInput:
+		id: Pritchett_textinput
+		font_size: 100
+		size_hint_y:None
+		height:200
+		text:'default'
+		on_text: root.change_label_color() 
+		#will always refer to base def root and call nested function
+	FloatLayout:
+		Scatter:
+			Label:
+				id:Pritchett_label
+				text:Pritchett_textinput.text
+				font_size:100

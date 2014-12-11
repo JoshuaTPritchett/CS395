@@ -1,0 +1,14 @@
+# down the main program
+<ScatterTextWidget>: 
+	orientation: 'vertical'
+	TextInput:
+		id: Pritchett_textinput
+		font_size: 100
+		size_hint_y:None
+		height:200
+		text:'default'
+	FloatLayout:
+		Scatter:
+			Label:
+				text:Pritchett_textinput.text
+				font_size:100
